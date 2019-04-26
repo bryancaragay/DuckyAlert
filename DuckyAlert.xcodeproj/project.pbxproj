@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B97584E2273A7A0002FCEEB /* DuckyAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9758442273A7A0002FCEEB /* DuckyAlert.framework */; };
 		9B9758532273A7A0002FCEEB /* DuckyAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9758522273A7A0002FCEEB /* DuckyAlertTests.swift */; };
-		9B9758552273A7A0002FCEEB /* DuckyAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B9758472273A7A0002FCEEB /* DuckyAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B97585F2273B190002FCEEB /* DuckyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97585E2273B190002FCEEB /* DuckyAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		9B9758442273A7A0002FCEEB /* DuckyAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DuckyAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B9758472273A7A0002FCEEB /* DuckyAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckyAlert.h; sourceTree = "<group>"; };
 		9B9758482273A7A0002FCEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B97584D2273A7A0002FCEEB /* DuckyAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckyAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9758522273A7A0002FCEEB /* DuckyAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyAlertTests.swift; sourceTree = "<group>"; };
 		9B9758542273A7A0002FCEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B97585E2273B190002FCEEB /* DuckyAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		9B9758462273A7A0002FCEEB /* DuckyAlert */ = {
 			isa = PBXGroup;
 			children = (
-				9B9758472273A7A0002FCEEB /* DuckyAlert.h */,
+				9B97585E2273B190002FCEEB /* DuckyAlertController.swift */,
 				9B9758482273A7A0002FCEEB /* Info.plist */,
 			);
 			path = DuckyAlert;
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B9758552273A7A0002FCEEB /* DuckyAlert.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +147,7 @@
 				TargetAttributes = {
 					9B9758432273A7A0002FCEEB = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					9B97584C2273A7A0002FCEEB = {
 						CreatedOnToolsVersion = 10.2;
@@ -194,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B97585F2273B190002FCEEB /* DuckyAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +342,7 @@
 		9B9758592273A7A0002FCEEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.scrappytech.DuckyAlert;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +369,7 @@
 		9B97585A2273A7A0002FCEEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +395,7 @@
 		9B97585C2273A7A0002FCEEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AWX52SKH6;
 				INFOPLIST_FILE = DuckyAlertTests/Info.plist;
@@ -409,6 +414,7 @@
 		9B97585D2273A7A0002FCEEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AWX52SKH6;
 				INFOPLIST_FILE = DuckyAlertTests/Info.plist;

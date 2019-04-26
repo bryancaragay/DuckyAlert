@@ -76,7 +76,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/bryancaragay/DuckyAlert.git", :tag => "#{spec.version}" }
+  spec.source = { :git => "https://github.com/bryancaragay/DuckyAlert.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "DuckyAlert/**/*.{swift}"
+  spec.source_files  = "DuckyAlert/**/*.{swift}"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -101,7 +101,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-    spec.resources = "DuckyAlert/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  # spec.resources = "DuckyAlert/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
